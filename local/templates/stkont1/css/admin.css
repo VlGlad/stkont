@@ -1,0 +1,57 @@
+select{
+    width: 250px;
+}
+
+.show_all{
+    width: 100px;
+}
+
+
+.remodal .btns-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.remodal .btn {
+    display: table;
+    padding: 8px 24px;
+    background: #9FBAF4;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 0px;
+}
+.remodal .btn.btn-yellow {
+    background: #FCD816;
+    padding: 10px 24px;
+    width: 170px;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.remodal .btn.btn-black {
+    background: #383838;
+    padding: 10px 24px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 14px;
+    width: 170px;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
