@@ -26,6 +26,7 @@ $asset = Asset::getInstance();
     $asset->addCss(SITE_TEMPLATE_PATH."/css/main.css");
     $asset->addCss(SITE_TEMPLATE_PATH."/css/ion.rangeSlider.css");
     $asset->addCss(SITE_TEMPLATE_PATH."/css/other.css");
+    $asset->addCss(SITE_TEMPLATE_PATH."/css/custom_preloader_style.css");
     ?>
     
     <link type="image/png" rel="icon" href="<?=SITE_TEMPLATE_PATH?>/img/favicon.ico">

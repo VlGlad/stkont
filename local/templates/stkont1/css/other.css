@@ -877,3 +877,7 @@ nav a {
         bottom: 44px;
     }
 }
+
+.bx-core-waitwindow{
+    display: none !important;
+}
