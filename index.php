@@ -10,33 +10,35 @@ $APPLICATION->SetTitle("");
 				 Подберем технику за 15 минут <br>
 				 на основании особенностей эксплуатации
 			</div>
+            <div class="horizontal-form">
+                    <?$APPLICATION->IncludeComponent("bitrix:form.result.new", "template1", Array(
+                        "CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                        "CACHE_TYPE" => "A",	// Тип кеширования
+                        "CHAIN_ITEM_LINK" => "",	// Ссылка на дополнительном пункте в навигационной цепочке
+                        "CHAIN_ITEM_TEXT" => "",	// Название дополнительного пункта в навигационной цепочке
+                        "EDIT_URL" => "",	// Страница редактирования результата
+                        "IGNORE_CUSTOM_TEMPLATE" => "N",	// Игнорировать свой шаблон
+                        "LIST_URL" => "",	// Страница со списком результатов
+                        "SEF_MODE" => "N",	// Включить поддержку ЧПУ
+                        "SUCCESS_URL" => "",	// Страница с сообщением об успешной отправке
+                        "USE_EXTENDED_ERRORS" => "Y",	// Использовать расширенный вывод сообщений об ошибках
+                        "VARIABLE_ALIASES" => array(
+                            "RESULT_ID" => "RESULT_ID",
+                            "WEB_FORM_ID" => "WEB_FORM_ID",
+                        ),
+                        "WEB_FORM_ID" => "1",	// ID веб-формы
+                        "AJAX_MODE" => "Y",
+                        "AJAX_OPTION_SHADOW" => "N",
+                        "AJAX_OPTION_JUMP" => "N",
+                        "AJAX_OPTION_STYLE" => "Y",
+                        "AJAX_OPTION_HISTORY" => "N",
+                    ),
+                        false
+                    );?>
+            </div>
 		</div>
 		<div class="kube-1">
- <img src="/local/templates/stkont1/img/ku.png" alt=""><br>
-	<?$APPLICATION->IncludeComponent("bitrix:form.result.new", "template1", Array(
-	"CACHE_TIME" => "3600",	// Время кеширования (сек.)
-		"CACHE_TYPE" => "A",	// Тип кеширования
-		"CHAIN_ITEM_LINK" => "",	// Ссылка на дополнительном пункте в навигационной цепочке
-		"CHAIN_ITEM_TEXT" => "",	// Название дополнительного пункта в навигационной цепочке
-		"EDIT_URL" => "",	// Страница редактирования результата
-		"IGNORE_CUSTOM_TEMPLATE" => "N",	// Игнорировать свой шаблон
-		"LIST_URL" => "",	// Страница со списком результатов
-		"SEF_MODE" => "N",	// Включить поддержку ЧПУ
-		"SUCCESS_URL" => "",	// Страница с сообщением об успешной отправке
-		"USE_EXTENDED_ERRORS" => "Y",	// Использовать расширенный вывод сообщений об ошибках
-		"VARIABLE_ALIASES" => array(
-			"RESULT_ID" => "RESULT_ID",
-			"WEB_FORM_ID" => "WEB_FORM_ID",
-		),
-		"WEB_FORM_ID" => "1",	// ID веб-формы
-        "AJAX_MODE" => "Y",
-        "AJAX_OPTION_SHADOW" => "N",
-        "AJAX_OPTION_JUMP" => "N",
-        "AJAX_OPTION_STYLE" => "Y",
-        "AJAX_OPTION_HISTORY" => "N",
-	),
-	false
-);?><br>
+ <img src="<?=SITE_TEMPLATE_PATH?>/img/ku.png" alt=""><br>
 		</div>
 	</div>
 </div>
