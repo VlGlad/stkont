@@ -14,14 +14,16 @@ $asset = Asset::getInstance();
     <title><?$APPLICATION->ShowTitle();?></title>
     <?$APPLICATION->ShowHead();?>
     <?
+    $asset->addJs(SITE_TEMPLATE_PATH."/js/scripts.js");
+    $asset->addJs(SITE_TEMPLATE_PATH."/js/other.js");
+    $asset->addJs(SITE_TEMPLATE_PATH."/js/change_load_gif.js");
     $asset->addJs(SITE_TEMPLATE_PATH."/js/jquery.maskedinput.js");
     $asset->addJs(SITE_TEMPLATE_PATH."/js/jquery.fancybox.min.js");
     $asset->addJs(SITE_TEMPLATE_PATH."/js/jquery-ui-1.8.19.custom.min.js");
     $asset->addJs(SITE_TEMPLATE_PATH."/js/jquery.ui.touch-punch.min.js");
     $asset->addJs(SITE_TEMPLATE_PATH."/js/slick.min.js");
     $asset->addJs(SITE_TEMPLATE_PATH."/js/remodal.min.js");
-    $asset->addJs(SITE_TEMPLATE_PATH."/js/scripts.js");
-    $asset->addJs(SITE_TEMPLATE_PATH."/js/other.js");
+
     //$asset->addJs(SITE_TEMPLATE_PATH.);
     $asset->addCss(SITE_TEMPLATE_PATH."/css/main.css");
     $asset->addCss(SITE_TEMPLATE_PATH."/css/ion.rangeSlider.css");
@@ -48,6 +50,7 @@ $asset = Asset::getInstance();
 
 
 <body>
+    <?debug(SITE_TEMPLATE_PATH."/js/scripts.js");?>
     <div id="panel"><?$APPLICATION->ShowPanel();?></div>
     <div class="wrapper">
         <header class="header">

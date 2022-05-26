@@ -38,7 +38,7 @@ $APPLICATION->SetTitle("");
             </div>
 		</div>
 		<div class="kube-1">
- <img src="<?=SITE_TEMPLATE_PATH?>/img/ku.png" alt=""><br>
+            <img src="<?=SITE_TEMPLATE_PATH?>/img/ku.png" alt=""><br>
 		</div>
 	</div>
 </div>
